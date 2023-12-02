@@ -4,7 +4,7 @@ require_once("model-parks.php");
 
 $pageTitle = "Parks";
 include "view-header.php";
-$instructors = selectParks();
+$parks = selectParks();
 include "view-parks.php";
 include "view-footer.php";
 ?>
