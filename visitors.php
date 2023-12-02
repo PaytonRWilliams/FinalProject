@@ -4,7 +4,7 @@ require_once("model-visitors.php");
 
 $pageTitle = "Visitors";
 include "view-header.php";
-$courses = selectVisitors();
+$visitors = selectVisitors();
 include "view-visitors.php";
 include "view-footer.php";
 ?>
