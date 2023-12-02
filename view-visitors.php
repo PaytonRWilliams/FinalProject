@@ -1,4 +1,4 @@
-<h1>Parks</h1>
+<h1>Visitors</h1>
 <div class="table-responsive">
   <table class="table">
   <thead>
