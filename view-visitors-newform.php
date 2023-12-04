@@ -30,7 +30,7 @@
               <input type="int" class="form-control" id="vAge" name="vAge">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          </form>
       </div>
     </div>
   </div>
