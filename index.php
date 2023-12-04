@@ -15,7 +15,7 @@ include "view-header.php";
         body {
             /* Set background properties */
             background-image: url('try3.jpg');
-            background-size: 100% 100%; /* Adjusted background-size */
+            background-size: 50% 100%; /* Adjusted background-size */
             background-position: center center;
             background-repeat: no-repeat;
             /* Set other styles as needed */
