@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="bootstrap.css">
   <table class="table">
   <thead>
+    <link rel="stylesheet" href="bootstrap.css">
     <tr>
 <th>ID</th>
 <th>Name</th>
