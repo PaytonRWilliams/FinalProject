@@ -22,8 +22,12 @@ background-size: cover;
 
         /* Add your other CSS styles here */
 
-        h1 {
+ 
+           h1 {
             color: #fff; /* Set the color of your heading text */
+            text-align: center; /* Center the text */
+            font-size: 2em; /* Adjust the font size as needed */
+            margin-top: 50vh; /* Center vertically using margin-top */
         }
 
         /* Add more styles for other elements as needed */
