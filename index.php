@@ -15,7 +15,7 @@ include "view-header.php";
         body {
             /* Set background properties */
             background-image: url('try3.jpg');
-            background-size: cover; /* or 'contain' based on your preference */
+            background-size: 100% 100%; /* Adjusted background-size */
             background-position: center center;
             background-repeat: no-repeat;
             /* Set other styles as needed */
@@ -45,4 +45,3 @@ include "view-header.php";
 <?php
 include "view-footer.php";
 ?>
-
