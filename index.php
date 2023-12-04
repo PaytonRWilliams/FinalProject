@@ -14,7 +14,7 @@ include "view-header.php";
     <style>
         body {
             /* Set background properties */
-            background-image: url('webnational.jpg');
+            background-image: url('try2.jpg');
             background-size: cover; /* or 'contain' based on your preference */
             background-position: center center;
             background-repeat: no-repeat;
