@@ -14,14 +14,9 @@ include "view-header.php";
     <style>
         body {
             /* Set background properties */
-            background-image: url('try3.jpg');
-            background-size: 50% 100%; /* Adjusted background-size */
-            background-position: center center;
-            background-repeat: no-repeat;
-            /* Set other styles as needed */
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+          background: url(try3.jpg) fixed center no-repeat;
+
+background-size: cover;
             /* Add more styles as needed */
         }
 
