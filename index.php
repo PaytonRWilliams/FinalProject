@@ -27,7 +27,7 @@ background-size: cover;
             color: #fff; /* Set the color of your heading text */
             text-align: center; /* Center the text */
             font-size: 2em; /* Adjust the font size as needed */
-            margin-top: 50vh; /* Center vertically using margin-top */
+            margin-top: 20vh; /* Center vertically using margin-top */
         }
 
         /* Add more styles for other elements as needed */
