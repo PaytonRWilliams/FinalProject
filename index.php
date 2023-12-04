@@ -26,7 +26,7 @@ background-size: cover;
            h1 {
             color: #fff; /* Set the color of your heading text */
             text-align: center; /* Center the text */
-            font-size: 2em; /* Adjust the font size as needed */
+            font-size: 6em; /* Adjust the font size as needed */
             margin-top: 20vh; /* Center vertically using margin-top */
             font-family: 'Brush Script MT', cursive;
            }
@@ -37,7 +37,7 @@ background-size: cover;
 </head>
 <body>
 
-    <h1>Final Project</h1>
+    <h1>The Great Outdoors</h1>
 
 </body>
 </html>
