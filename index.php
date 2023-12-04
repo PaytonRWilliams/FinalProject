@@ -28,7 +28,8 @@ background-size: cover;
             text-align: center; /* Center the text */
             font-size: 2em; /* Adjust the font size as needed */
             margin-top: 20vh; /* Center vertically using margin-top */
-        }
+            font-family: 'Brush Script MT', cursive;
+           }
 
         /* Add more styles for other elements as needed */
 
