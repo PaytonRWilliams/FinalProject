@@ -1,5 +1,6 @@
 <h1>Parks</h1>
 <div class="table-responsive">
+  <link rel="stylesheet" href="bootstrap.css">
   <table class="table">
   <thead>
     <tr>
