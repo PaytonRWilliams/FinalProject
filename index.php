@@ -3,8 +3,7 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 <!-- Example for adding Bootstrap CSS and JS files -->
-<link rel="stylesheet" href="path/to/bootstrap.css">
-<script src="path/to/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap.css">
 
 <h1>Final Project</h1>
 <?php
