@@ -12,7 +12,7 @@
     }
 
     .container {
-      background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the container */
+      background-color: rgba(255, 255, 255, 0.8); 
       padding: 20px;
       border-radius: 8px;
       margin-top: 20px;
