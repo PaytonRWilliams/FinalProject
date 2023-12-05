@@ -6,6 +6,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="path/to/bootstrap.css">
   <style>
+    body {
+      background: url('path/to/your/image.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the container */
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
     .card {
       margin-bottom: 20px;
       border: 1px solid #ddd;
