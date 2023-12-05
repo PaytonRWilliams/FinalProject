@@ -31,7 +31,7 @@ function insertVisitor($vFname, $vLname, $vAge) {
 function updateVisitor($vid, $vFname, $vLname, $vAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `vistor` SET `visitor_id`='[value-?]',`visitor_fname`='[value-?]',`visitor_lname`='[value-?]',`visitor_age`='[value-?]' WHERE ?");
+        $stmt = $conn->prepare("UPDATE `vistor` SET `visitor_id`=? ,`visitor_fname`=? ,`visitor_lname`=? ,`visitor_age`=? WHERE visitor_id =?");
         $stmt->bind_param("issi", $vid, $vFname, $vLname, $vAge);
         $success = $stmt->execute();
         $conn->close();
