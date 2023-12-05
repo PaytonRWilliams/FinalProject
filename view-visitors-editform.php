@@ -29,7 +29,7 @@
             <input type="text" class="form-control" id="vAge<?php echo $visitor['visitor_id']; ?>" name="vAge" value="<?php echo $visitor['visitor_age']; ?>">
           </div>
             <input type="hidden" name="vid" value="<?php echo $visitor['visitor_id']; ?>">
-            <input type="hidden" name="actionType" value="edit">
+            <input type="hidden" name="actionType" value="add">
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
