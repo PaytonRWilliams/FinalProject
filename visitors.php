@@ -20,6 +20,7 @@ if (isset($_POST['actionType'])) {
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
+    break;
     case "Delete":
       if (deleteVisitor($_POST['vid'])) {
         echo '<div class="alert alert-success" role="alert">Visitor deleted.</div>';
