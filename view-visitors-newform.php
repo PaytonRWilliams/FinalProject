@@ -25,6 +25,10 @@
             <label for="vLname" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="vLname" name="vLname">
           </div>
+          <div class="mb-3">
+            <label for="vAge" class="form-label">Age</label>
+            <input type="int" class="form-control" id="vAge" name="vAge">
+          </div>
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
