@@ -33,7 +33,7 @@ function updateVisitor($vFname, $vLname, $vAge, $vid) {
         $conn = get_db_connection();
         
         // Update the SQL query with correct placeholders
-        $stmt = $conn->prepare("UPDATE `visitor` SET `visitor_fname`=?, `visitor_lname`=?, `visitor_age`=? WHERE `visitor_id`=?");
+        $stmt = $conn->prepare("update `visitor` set `visitor_fname` = ? , `visitor_lname` = ?, `visitor_age` = ? where visitor_id = ?");
 
         // Bind parameters
         $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
