@@ -28,7 +28,7 @@ function insertVisitor($vFname, $vLname, $vAge) {
     }
 }
 
-function updateVisitor($vid, $vFname, $vLname, $vAge) {
+function updateVisitor($vFname, $vLname, $vAge, $vid) {
     try {
         $conn = get_db_connection();
         
