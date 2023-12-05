@@ -31,22 +31,12 @@ function insertVisitor($vFname, $vLname, $vAge) {
 function updateVisitor($vFname, $vLname, $vAge, $vid) {
     try {
         $conn = get_db_connection();
-        
-        // Update the SQL query with correct placeholders
         $stmt = $conn->prepare("update `visitor` set `visitor_fname` = ? , `visitor_lname` = ?, `visitor_age` = ? where visitor_id = ?");
-
-        // Bind parameters
         $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
-
-        // Execute the statement
         $success = $stmt->execute();
-
-        // Close the connection
         $conn->close();
-
         return $success;
     } catch (Exception $e) {
-        // Close the connection in case of an exception
         $conn->close();
         throw $e;
     }
