@@ -37,6 +37,10 @@ while ($visitor = $visitors->fetch_assoc())
   <td><?php echo $visitor['visitor_lname']; ?></td>
     <td><?php echo $visitor['visitor_age']; ?></td>
     <td>
+      <?php
+include "view-visitors-editform.php";
+?>
+
       <form method="post" action="">
         <input type="hidden" name="vid" value="<?php echo $visitor['visitor_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
