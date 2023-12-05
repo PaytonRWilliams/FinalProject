@@ -14,11 +14,11 @@ function selectVisitors() {
     }
 }
 
-function insertVisitor($vid, $vFname, $vLname, $vAge) {
+function insertVisitor($vFname, $vLname, $vAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `vistor` (`visitor_id`, `visitor_fname`, `visitor_lname`, `visitor_age`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("issi",$vid, $vFname, $vLname, $vAge);
+        $stmt = $conn->prepare("INSERT INTO `vistor` (`visitor_fname`, `visitor_lname`, `visitor_age`) VALUES (?, ?, ?)");
+        $stmt->bind_param("ssi", $vFname, $vLname, $vAge);
         $success = $stmt->execute();
         $conn->close();
         return $success;
