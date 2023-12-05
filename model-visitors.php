@@ -17,7 +17,7 @@ function selectVisitors() {
 function insertVisitor($vFname, $vLname, $vAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `vistor` SET `visitor_id`='[value-1]',`visitor_fname`='[value-2]',`visitor_lname`='[value-3]',`visitor_age`='[value-4]' WHERE 1");
+        $stmt = $conn->prepare("INSERT INTO `vistor` (`visitor_fname`, `visitor_lname`, `visitor_age`) VALUES (?, ?, ?)");
         $stmt->bind_param("ssi", $vFname, $vLname, $vAge);
         $success = $stmt->execute();
         $conn->close();
@@ -31,7 +31,7 @@ function insertVisitor($vFname, $vLname, $vAge) {
 function updateVisitor($vFname, $vLname, $vAge, $vid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `visitor` SET `visitor_fname` = ?, `visitor_lname` = ?, `visitor_age` = ? WHERE `visitor_id` = ?");
+        $stmt = $conn->prepare("UPDATE `vistor` SET `visitor_id`='[value-1]',`visitor_fname`='[value-2]',`visitor_lname`='[value-3]',`visitor_age`='[value-4]' WHERE 1");
         $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
         $success = $stmt->execute();
         $conn->close();
