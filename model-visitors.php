@@ -18,7 +18,7 @@ function insertVisitor($vFname, $vLname, $vAge) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO 'visitor' ('visitor_fname', 'visitor_lname', 'visitor_age') VALUES (?, ?, ?)");
-          $stmt->bind_param("ssi", $vFname, $vLname, $vAge);
+          $stmt->bind_param("sss", $vFname, $vLname, $vAge);
         $success = $stmt->execute();
         $conn->close();
         return $success;
