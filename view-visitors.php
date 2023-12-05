@@ -6,7 +6,7 @@
   <title>Your Page Title</title>
   <style>
     body {
-      background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+      background-image: url('try3.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
     }
