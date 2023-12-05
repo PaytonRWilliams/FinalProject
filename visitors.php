@@ -14,7 +14,8 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
-    
+  }
+}
 $visitors = selectVisitors();
 include "view-visitors.php";
 include "view-footer.php";
