@@ -6,9 +6,13 @@
   <title>Your Page Title</title>
   <style>
     body {
-      background-image: url('try3.jpg'); 
+      background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
       background-size: cover;
       background-repeat: no-repeat;
+    }
+
+    .table {
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha (fourth) parameter for transparency */
     }
   </style>
 </head>
