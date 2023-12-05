@@ -38,7 +38,7 @@ while ($visitor = $visitors->fetch_assoc())
     <td><?php echo $visitor['visitor_age']; ?></td>
     <td>
       <form method="post" action="">
-        <input type="hidden" name="cid" value="<?php echo $course['course_id']; ?>">
+        <input type="hidden" name="vid" value="<?php echo $visitor['visitor_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
