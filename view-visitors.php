@@ -19,6 +19,8 @@ include "view-visitors-newform.php";
 <th>Last Name</th>
 <th>Age</th>
     <th></th>
+      <th></th>
+      <th></th>
   </tr>
   </thead>
     <tbody>
@@ -34,6 +36,11 @@ while ($visitor = $visitors->fetch_assoc())
    <td><?php echo $visitor['visitor_fname']; ?></td>
   <td><?php echo $visitor['visitor_lname']; ?></td>
     <td><?php echo $visitor['visitor_age']; ?></td>
+    <td>
+      
+    </td>
+    <td>
+    </td>
   </tr>
 <?php
 }
