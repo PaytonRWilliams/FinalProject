@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="path/to/bootstrap.css">
   <style>
     .card {
@@ -36,7 +36,9 @@
       <?php while ($park = $parks->fetch_assoc()): ?>
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">ID: <?php echo $park['park_id']; ?></h5>
+            <h5 class="card-title">
+              <i class="fas fa-tree"></i> ID: <?php echo $park['park_id']; ?>
+            </h5>
             <p class="card-text">Name: <?php echo $park['park_name']; ?></p>
             <p class="card-text">State: <?php echo $park['park_state']; ?></p>
           </div>
