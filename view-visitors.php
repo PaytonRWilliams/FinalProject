@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Page Title</title>
-  <link rel="stylesheet" href="path/to/bootstrap.css"> <!-- Add the correct path to Bootstrap CSS -->
+  <title>Visitors</title>
+  <link rel="stylesheet" href="path/to/bootstrap.css"> 
+  <?php
+include "view-visitors-newform.php";
+?>
+  <!-- Add the correct path to Bootstrap CSS -->
   <style>
     body {
       background-image: url('try3.jpg');
