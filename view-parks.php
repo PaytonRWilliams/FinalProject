@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="path/to/bootstrap.css">
   <style>
     body {
-      background: url('path/to/your/image.jpg') no-repeat center center fixed;
+      background: url('try2.jpg') no-repeat center center fixed;
       background-size: cover;
     }
 
