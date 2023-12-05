@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visitors</title>
-  <link rel="stylesheet" href="path/to/bootstrap.css"> 
+  <link rel="stylesheet" href="path/to/bootstrap.css">
   <?php
-include "view-visitors-newform.php";
-?>
+  include "view-visitors-newform.php";
+  ?>
   <!-- Add the correct path to Bootstrap CSS -->
   <style>
     body {
@@ -19,6 +19,7 @@ include "view-visitors-newform.php";
 
     .card {
       margin: 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
     }
 
     .table {
