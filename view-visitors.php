@@ -12,7 +12,8 @@
   <!-- Add the correct path to Bootstrap CSS -->
   <style>
     body {
-      background-image: url('try3.jpg');
+    
+       background: url(try3.jpg) fixed center no-repeat;
       background-size: cover;
       background-repeat: no-repeat;
     }
