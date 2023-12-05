@@ -45,7 +45,7 @@ function deleteVisitor($vid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from visitor where visitor_id=?");
-          $stmt->bind_param("i", $vid);
+        $stmt->bind_param("i", $vid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
