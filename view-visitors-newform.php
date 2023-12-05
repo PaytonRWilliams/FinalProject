@@ -29,6 +29,7 @@
               <label for="vAge" class="form-label">Age</label>
               <input type="int" class="form-control" id="vAge" name="vAge">
             </div>
+            <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
       </div>
