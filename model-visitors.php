@@ -32,7 +32,7 @@ function updateVisitor($vFname, $vLname, $vAge, $vid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `visitor` SET `visitor_fname` = ?, `visitor_lname` = ?, `visitor_age` = ? WHERE `visitor_id` = ?");
-          $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
+        $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
