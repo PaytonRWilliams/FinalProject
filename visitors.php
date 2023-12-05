@@ -14,7 +14,7 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
-    case "Edit":
+    case "edit":
       if (updateVisitor($_POST['vFname'], $_POST['vLname'], $_POST['vAge'], $_POST['vid'])) {
         echo '<div class="alert alert-success" role="alert">Visitor edited.</div>';
       } else {
