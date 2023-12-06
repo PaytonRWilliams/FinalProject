@@ -62,9 +62,9 @@
             <p class="card-text">State: <?php echo $park['park_state']; ?></p>
             
             <!-- Edit Button -->
-          <?php include "view-visitors-editform.php"; ?>
+          <?php include "view-parks-editform.php"; ?>
         <form method="post" action="">
-          <input type="hidden" name="vid" value="<?php echo $visitor['visitor_id']; ?>">
+          <input type="hidden" name="Pid" value="<?php echo $park['park_id']; ?>">
           <input type="hidden" name="actionType" value="Delete">
           <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
