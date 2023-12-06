@@ -21,7 +21,7 @@ function selectParks() {
 
 
 
-function insertParks($Pname, $Pstate) {
+function insertPark($Pname, $Pstate) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `park` (`park_name`, `park_state`) VALUES (?, ?)");
@@ -35,7 +35,7 @@ function insertParks($Pname, $Pstate) {
     }
 }
 
-function updateVisitor($Pname, $Pstate, $Pid) {
+function updatePark($Pname, $Pstate, $Pid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `park` SET `park_name`=?, `park_state`=? WHERE `park_id`=?");
@@ -48,7 +48,7 @@ function updateVisitor($Pname, $Pstate, $Pid) {
         throw $e;
     }
 }
-function deleteVisitor($Pid) {
+function deletePark($Pid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM `park` WHERE `park`.`park_id` = ?");
