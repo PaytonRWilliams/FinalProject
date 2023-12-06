@@ -31,7 +31,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$visitors = selectActivities();
+$activities = selectActivities();
 include "view-activities.php";
 include "view-footer.php";
 ?>
