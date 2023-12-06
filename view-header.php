@@ -48,6 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="parks-with-visitors.php">Parks with Visitors</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="activities.php">Activities</a>
+            </li>
           </ul>
         </div>
       </div>
