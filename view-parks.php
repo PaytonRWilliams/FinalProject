@@ -26,8 +26,8 @@
     }
 
     .card-body {
-      padding: 20px;
       position: relative;
+      padding: 20px;
     }
 
     .card-title {
@@ -41,7 +41,7 @@
 
     .edit-btn, .delete-btn {
       position: absolute;
-      top: 10px;
+      bottom: 10px;
       right: 10px;
     }
   </style>
