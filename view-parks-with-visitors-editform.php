@@ -7,17 +7,17 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editVisitModal<?php echo $course['section_id']; ?>" tabindex="-1" aria-labelledby="editVisitModalLabel<?php echo $course['section_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editVisitModal<?php echo $visitor['visit_id']; ?>" tabindex="-1" aria-labelledby="editVisitModalLabel<?php echo $visitor['visit_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editVisitModalLabel<?php echo $course['section_id']; ?>">Edit Visit</h1>
+        <h1 class="modal-title fs-5" id="editVisitModalLabel<?php echo $visitor['visit_id']; ?>">Edit Visit</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="iid<?php echo $course['section_id']; ?>" class="form-label">Instructor</label>
+            <label for="iid<?php echo $visitor['visit_id']; ?>" class="form-label">Visitor</label>
 <?php
 $instructorList = selectInstructorsForInput();
 $selectedInstructor = $course['instructor_id'];
@@ -25,8 +25,8 @@ include "instructor-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="cid<?php echo $course['section_id']; ?>" class="form-label">Course</label>
-            <input type="text" class="form-control" id="cid<?php echo $course['section_id']; ?>" name="cid" value="<?php echo $course['course_id']; ?>">
+            <label for="pid<?php echo $visitor['visit_id']; ?>" class="form-label">Park</label>
+            <input type="text" class="form-control" id="pid<?php echo $visitor['visit_id']; ?>" name="pid" value="<?php echo $park['park_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="sem<?php echo $course['section_id']; ?>" class="form-label">Semester</label>
