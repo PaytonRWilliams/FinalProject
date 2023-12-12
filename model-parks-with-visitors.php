@@ -1,8 +1,8 @@
 <?php
-function selectInstructors() {
+function selectParks() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT instructor_id, instructor_name, office_number FROM `instructor`");
+        $stmt = $conn->prepare("SELECT park_id, park_name, park_state FROM `park`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
