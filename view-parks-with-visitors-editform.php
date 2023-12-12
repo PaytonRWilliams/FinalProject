@@ -19,9 +19,9 @@
           <div class="mb-3">
             <label for="iid<?php echo $visitor['visit_id']; ?>" class="form-label">Visitor</label>
 <?php
-$instructorList = selectInstructorsForInput();
-$selectedInstructor = $course['instructor_id'];
-include "instructor-input-list.php";
+$parkList = selectParksForInput();
+$selectedPark = $visitor['park_id'];
+include "park-input-list.php";
 ?>
           </div>
           <div class="mb-3">
