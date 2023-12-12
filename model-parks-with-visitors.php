@@ -28,10 +28,10 @@ function selectCoursesByInstructor($iid) {
     }
 }
 
-function selectInstructorsForInput() {
+function selectParksForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT instructor_id, instructor_name FROM `instructor` order by instructor_name");
+        $stmt = $conn->prepare("SELECT park_id, park_name FROM `park` order by park_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -42,10 +42,10 @@ function selectInstructorsForInput() {
     }
 }
 
-function selectCoursesForInput() {
+function selectVisitorsForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT course_id, course_number FROM `course` order by course_number");
+        $stmt = $conn->prepare("SELECT visitor_id, visitor_fname, visitor_lname FROM `visitor` order by visitor_fname");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -56,11 +56,11 @@ function selectCoursesForInput() {
     }
 }
 
-function insertSection($iid, $cid, $sem, $room, $time) {
+function insertVisit($pid, $vid, $sem, $date) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `section` (`instructor_id`, `course_id`, `semester`, `room`, `day_time`) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("iisss", $iid, $cid, $sem, $room, $time);
+        $stmt = $conn->prepare("INSERT INTO `visit` (`park_id`, `visitor_id`, `visit_date`) VALUES (?, ?, ?)");
+        $stmt->bind_param("iis", $iid, $cid, $date);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -70,11 +70,11 @@ function insertSection($iid, $cid, $sem, $room, $time) {
     }
 }
 
-function updateVisit($iid, $cid, $sem, $room, $time, $sid) {
+function updateVisit($pid, $vid, $date, $tid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `section` set `instructor_id` = ?, `course_id` = ?, `semester` = ?, `room` = ?, `day_time` = ? where section_id = ?");
-        $stmt->bind_param("iisssi", $iid, $cid, $sem, $room, $time, $sid);
+        $stmt = $conn->prepare("update `visit` set `park_id` = ?, `visitor_id` = ?, `visit_date` = ? where visit_id = ?");
+        $stmt->bind_param("iisi", $pid, $vid, $date, $tid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -84,11 +84,11 @@ function updateVisit($iid, $cid, $sem, $room, $time, $sid) {
     }
 }
 
-function deleteVisit($sid) {
+function deleteVisit($tid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from section where section_id=?");
-        $stmt->bind_param("i", $sid);
+        $stmt = $conn->prepare("delete from visit where visit_id=?");
+        $stmt->bind_param("i", $tid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
