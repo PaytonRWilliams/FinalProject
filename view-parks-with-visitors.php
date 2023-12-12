@@ -51,7 +51,7 @@ include "view-parks-with-visitors-editform.php";
   ?>
         </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Location: <?php echo $parks['store_location']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Location: <?php echo $park['park_name']; ?></small></p>
     </div>
   </div>
 <?php
