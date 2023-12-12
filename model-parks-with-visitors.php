@@ -13,11 +13,11 @@ function selectParks() {
     }
 }
 
-function selectCoursesByInstructor($iid) {
+function selectVisitorsByPark($pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.course_id, course_number, course_description, semester, room, day_time, section_id, s.instructor_id FROM `course` c join section s on s.course_id = c.course_id where s.instructor_id=?");
-        $stmt->bind_param("i", $iid);
+        $stmt = $conn->prepare("SELECT v.visitor_id, visitor_name, visitor_age, visit_id, t.park_id FROM `visitor` v join visit t on t.visitor_id = v.visitor_id where t.park_id=?");
+        $stmt->bind_param("i", $pid);
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
