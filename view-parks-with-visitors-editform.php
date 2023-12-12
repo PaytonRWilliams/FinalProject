@@ -29,18 +29,10 @@ include "instructor-input-list.php";
             <input type="text" class="form-control" id="pid<?php echo $visitor['visit_id']; ?>" name="pid" value="<?php echo $park['park_id']; ?>">
           </div>
           <div class="mb-3">
-            <label for="sem<?php echo $course['section_id']; ?>" class="form-label">Semester</label>
-            <input type="text" class="form-control" id="sem<?php echo $course['section_id']; ?>" name="sem" value="<?php echo $course['semester']; ?>">
+            <label for="date<?php echo $visitor['visit_id']; ?>" class="form-label">Visit Date</label>
+            <input type="text" class="form-control" id="date<?php echo $visitor['visit_id']; ?>" name="date" value="<?php echo $visit['visit_date']; ?>">
           </div>
-          <div class="mb-3">
-            <label for="room<?php echo $course['section_id']; ?>" class="form-label">Room</label>
-            <input type="text" class="form-control" id="room<?php echo $course['section_id']; ?>" name="room" value="<?php echo $course['room']; ?>">
-          </div>
-          <div class="mb-3">
-            <label for="daytime<?php echo $course['section_id']; ?>" class="form-label">Day/ time</label>
-            <input type="text" class="form-control" id="daytime<?php echo $course['section_id']; ?>" name="daytime" value="<?php echo $course['day_time']; ?>">
-          </div>
-            <input type="hidden" name="sid" value="<?php echo $course['section_id']; ?>">
+            <input type="hidden" name="tid" value="<?php echo $visitor['visit_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
