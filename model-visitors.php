@@ -17,7 +17,7 @@ function selectVisitors() {
 function insertVisitor($vFname, $vLname, $vAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `vistor` (`visitor_fname`, `visitor_lname`, `visitor_age`) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `visitor` (`visitor_fname`, `visitor_lname`, `visitor_age`) VALUES (?, ?, ?)");
         $stmt->bind_param("ssi", $vFname, $vLname, $vAge);
         $success = $stmt->execute();
         $conn->close();
@@ -31,7 +31,7 @@ function insertVisitor($vFname, $vLname, $vAge) {
 function updateVisitor($vFname, $vLname, $vAge, $vid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `vistor` SET `visitor_fname`=?, `visitor_lname`=?, `visitor_age`=? WHERE `visitor_id`=?");
+        $stmt = $conn->prepare("UPDATE `visitor` SET `visitor_fname`=?, `visitor_lname`=?, `visitor_age`=? WHERE `visitor_id`=?");
         $stmt->bind_param("ssii", $vFname, $vLname, $vAge, $vid);
         $success = $stmt->execute();
         $conn->close();
@@ -44,7 +44,7 @@ function updateVisitor($vFname, $vLname, $vAge, $vid) {
 function deleteVisitor($vid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM `vistor` WHERE `vistor`.`visitor_id` = ?");
+        $stmt = $conn->prepare("DELETE FROM `visitor` WHERE `visitor`.`visitor_id` = ?");
         $stmt->bind_param("i", $vid);
         $success = $stmt->execute();
         $conn->close();
