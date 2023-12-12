@@ -70,7 +70,7 @@ function insertSection($iid, $cid, $sem, $room, $time) {
     }
 }
 
-function updateSection($iid, $cid, $sem, $room, $time, $sid) {
+function updateVisit($iid, $cid, $sem, $room, $time, $sid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `section` set `instructor_id` = ?, `course_id` = ?, `semester` = ?, `room` = ?, `day_time` = ? where section_id = ?");
@@ -84,7 +84,7 @@ function updateSection($iid, $cid, $sem, $room, $time, $sid) {
     }
 }
 
-function deleteSection($sid) {
+function deleteVisit($sid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from section where section_id=?");
