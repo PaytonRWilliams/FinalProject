@@ -16,7 +16,7 @@ function selectParks() {
 function selectVisitorsByPark($pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT v.visitor_id, visitor_name, visitor_age, visit_id, t.park_id FROM `visitor` v join visit t on t.visitor_id = v.visitor_id where t.park_id=?");
+        $stmt = $conn->prepare("SELECT v.visitor_id, visitor_fname, visitor_age, visit_id, t.park_id FROM `visitor` v join visit t on t.visitor_id = v.visitor_id where t.park_id=?");
         $stmt->bind_param("i", $pid);
         $stmt->execute();
         $result = $stmt->get_result();
