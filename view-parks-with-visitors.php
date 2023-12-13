@@ -18,7 +18,7 @@ while ($park = $parks->fetch_assoc()){
       <p class="card-text">
    <ul class="list-group">
  <?php
-  $visitors = selectVisitorsWhatPark($park['park_id']);
+  $visitors = selectVisitorsByPark($park['park_id']);
   while ($visitor = $visitors->fetch_assoc()){
   ?>
      <li class="list-group-item">
