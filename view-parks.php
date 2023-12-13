@@ -99,10 +99,10 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Yellowstone', 'Grand Canyon', 'Redwood'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: '# of Visitors in 2023 in millions',
+        data: [4.1, 4.73, .75],
         borderWidth: 1
       }]
     },
