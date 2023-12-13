@@ -25,7 +25,7 @@ include "view-park-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="cid" class="form-label">Visitor</label>
+            <label for="vid" class="form-label">Visitor ID</label>
             <input type="text" class="form-control" id="vid" name="vid">
           </div>
           <div class="mb-3">
