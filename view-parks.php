@@ -21,6 +21,13 @@
       margin-top: 20px;
     }
 
+    .chart-container {
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
     .card {
       margin-bottom: 20px;
       border: 1px solid #ddd;
@@ -86,10 +93,9 @@
     </div>
   </div>
 
-</body>
-  <div>
-  <canvas id="myChart"></canvas>
-</div>
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -116,4 +122,6 @@
   });
 </script>
 
+</body>
 </html>
+
