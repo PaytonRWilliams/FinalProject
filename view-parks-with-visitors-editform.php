@@ -30,7 +30,7 @@ include "view-park-input-list.php";
           </div>
           <div class="mb-3">
             <label for="date<?php echo $visitor['visit_id']; ?>" class="form-label">Visit Date</label>
-            <input type="text" class="form-control" id="date<?php echo $visitor['visit_id']; ?>" name="date" value="<?php echo $visit['visit_date']; ?>">
+            <input type="text" class="form-control" id="date<?php echo $visitor['visit_id']; ?>" name="date" value="<?php echo $visitor['visit_date']; ?>">
           </div>
             <input type="hidden" name="tid" value="<?php echo $visitor['visit_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
