@@ -24,7 +24,7 @@ while ($park = $parks->fetch_assoc()){
      <li class="list-group-item">
     <div class="row">
       <div class="col">
-        <?php echo $visitor['visitor_fname']; ?> - <?php echo $visit['visit_date']; ?>
+        <?php echo $visitor['visitor_fname']; ?> - <?php echo $visitor['visit_date']; ?>
       </div>
       <div class="col-auto">
 <?php
