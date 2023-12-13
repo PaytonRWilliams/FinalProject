@@ -13,7 +13,7 @@
   <style>
     body {
     
-       background: url(try3.jpg) fixed center no-repeat;
+       background: url(active.jpg) fixed center no-repeat;
       background-size: cover;
       background-repeat: no-repeat;
     }
