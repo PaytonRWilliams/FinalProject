@@ -18,7 +18,7 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="pid" class="form-label">Park</label>
-<?ph
+<?php
 $parkList = selectParksForInput();
 $selectedPark = 0;
 include "view-park-input-list.php";
