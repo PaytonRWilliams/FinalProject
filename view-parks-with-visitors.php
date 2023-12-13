@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-<h1>Parks with Managers</h1>
+<h1>Parks with Visitors</h1>
     </div>
   <div class="col-auto">
 <?php
