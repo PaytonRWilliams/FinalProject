@@ -56,11 +56,11 @@ function selectVisitorsForInput() {
     }
 }
 
-function insertVisit($pid, $vid, $sem, $date) {
+function insertVisit($pid, $vid, $date) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `visit` (`park_id`, `visitor_id`, `visit_date`) VALUES (?, ?, ?)");
-        $stmt->bind_param("iis", $iid, $cid, $date);
+        $stmt->bind_param("iis", $pid, $vid, $date); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -69,6 +69,7 @@ function insertVisit($pid, $vid, $sem, $date) {
         throw $e;
     }
 }
+
 
 function updateVisit($pid, $vid, $date, $tid) {
     try {
