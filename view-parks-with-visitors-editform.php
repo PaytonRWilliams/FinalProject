@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="iid<?php echo $visitor['visit_id']; ?>" class="form-label">Visitor</label>
+            <label for="pid<?php echo $visitor['visit_id']; ?>" class="form-label">Park</label>
 <?php
 $parkList = selectParksForInput();
 $selectedPark = $visitor['park_id'];
