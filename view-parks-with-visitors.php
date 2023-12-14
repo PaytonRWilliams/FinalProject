@@ -5,14 +5,17 @@
   <style>
     .background-image {
       background-image: url('camp.jpg');
-      background-size: cover; /* Adjust this property based on your needs */
+      background-size: cover;
       background-repeat: no-repeat;
     }
 
     /* Add this style for semi-transparent cards */
     .card {
-      background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
       margin-bottom: 15px;
+    }
+
+    .card-body {
+      background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
     }
   </style>
 </head>
