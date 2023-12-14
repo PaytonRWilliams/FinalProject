@@ -10,7 +10,7 @@
     }
 
     .background-image {
-      background-image: url('camp.jpg');
+      background-image: url('camp2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       color: #fff; /* Text color for better visibility */
