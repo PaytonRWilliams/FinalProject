@@ -9,12 +9,9 @@
       padding: 0;
     }
 
-    .background-image {
-      background-image: url('camp2.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: #fff; /* Text color for better visibility */
-      padding: 20px;
+     background: url(camp2.jpg) fixed center no-repeat;
+
+background-size: cover;
     }
 
     h1 {
