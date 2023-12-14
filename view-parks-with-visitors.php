@@ -7,7 +7,7 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: url(camp2.jpg) fixed center no-repeat;
+      background: url(camp.jpg) fixed center no-repeat;
       background-size: cover;
     }
 
