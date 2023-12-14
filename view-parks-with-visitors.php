@@ -11,7 +11,7 @@
 
     /* Add this style for semi-transparent cards */
     .card {
-      background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (last parameter) for transparency */
+      background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
       margin-bottom: 15px;
     }
   </style>
