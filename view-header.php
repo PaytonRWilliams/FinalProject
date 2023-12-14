@@ -51,6 +51,12 @@
              <li class="nav-item">
               <a class="nav-link" href="activities.php">Activities</a>
             </li>
+            <li>
+              <p id="demo" style="display:none">Thank You and Goodbye!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+            </li>
           </ul>
         </div>
       </div>
