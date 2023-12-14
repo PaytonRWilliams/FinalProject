@@ -95,9 +95,46 @@
     </div>
   </div>
 
-  <!-- rest of your HTML code -->
+  <div class="card-group">
+    <?php while ($park = $parks->fetch_assoc()) { ?>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $park['park_name']; ?></h5>
+          <ul class="list-group">
+            <?php $visitors = selectVisitorsByPark($park['park_id']); ?>
+            <?php while ($visitor = $visitors->fetch_assoc()) { ?>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col">
+                    <?php echo $visitor['visitor_fname']; ?> - <?php echo $visitor['visit_date']; ?>
+                  </div>
+                  <div class="col-auto">
+                    <?php include "view-parks-with-visitors-editform.php"; ?>
+                  </div>
+                  <div class="col-auto">
+                    <form method="post" action="">
+                      <input type="hidden" name="tid" value="<?php echo $visitor['visit_id']; ?>">
+                      <input type="hidden" name="actionType" value="Delete">
+                      <button type="submit" class="btn" onclick="return confirm('Are you sure?');">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-trash" viewBox="0 0 16 16">
+                          <path
+                            d="M3 1a1 1 0 0 1 1 1v1h8a1 1 0 0 1 1 1v1h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h1V2a1 1 0 0 1 1-1zm0 2V2h10v1H3zm1 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6zm7-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1h-3V5zm-7 7a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3H4v-3zm2 1v1H3v-1h2zm8 0v1h-2v-1h2z" />
+                        </svg>
+                        Delete
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            <?php } ?>
+          </ul>
+          <p class="text-muted">Location: <?php echo $park['park_state']; ?></p>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
 
 </body>
 
 </html>
-
